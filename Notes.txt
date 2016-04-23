@@ -1,0 +1,39 @@
+https://www.aviationweather.gov/adds/dataserver_current/httpparam?dataSource=airsigmets&requestType=retrieve&format=xml&flightPath=57.5;-125.27,49.95;-104.65,39.83
+https://www.aviationweather.gov/adds/dataserver_current/httpparam?dataSource=airsigmets&requestType=retrieve&format=xml&flightPath=57.5;-96.7970,32.7767;-104.9903,39.7392
+
+http://cdn2.hubspot.net/hubfs/490937/OAG-WebTheme-2016-Images/Product_Sheets/Flightview/ProductSheet_DataAPIs.pdf?t=1461340539894
+http://www.oag.com/flightview/data-api
+
+https://www.aviationweather.gov/dataserver
+
+http://www.flightview.com/
+http://www.oag.com/flightview/data-api
+
+http://hortonworks.com/blog/data-science-apacheh-hadoop-predicting-airline-delays/
+
+https://github.com/SpaceApps2016/Resources
+https://2016.spaceappschallenge.org/locations/tampa-fl-usa
+Aviation Digital Data Service (ADDS) https://www.aviationweather.gov/adds
+
+http://virtualskies.arc.nasa.gov/index.html
+http://technology.nasa.gov/patent/TOP2-168
+
+SIGMET - Significant Meteorological Information
+https://en.wikipedia.org/wiki/SIGMET
+
+METAR - METAR is a format for reporting weather information
+https://en.wikipedia.org/wiki/METAR
+a report known as a special (SPECI) may be issued
+
+
+KSC sponsored challenges: 
+like INGRESS or google
+print my rocket (4 bays of KSC)
+emobile pastoralism
+low boom
+space route 66
+near 
+don't crash my drone... commercial
+
+
+https://books.google.com/books?id=Weq3BAAAQBAJ&pg=PA107&lpg=PA107&dq=E-Book:+Clark+and+Clark,+Constant+Scale+Natural+Boundary+Mapping+to+Reveal+Global+and+Cosmic+Processes,+2013&source=bl&ots=sdRPTC-OI7&sig=gYa_GyDlgZSMvWsdGzDPltCLREw&hl=en&sa=X&ved=0ahUKEwjy4_G1ye7LAhWGHB4KHXu7DyUQ6AEIKTAC#v=onepage&q&f=false
