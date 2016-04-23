@@ -68,7 +68,14 @@ def build_payload(i):
     """ Build request payload, add Airport data and time here
     :return: payload
     """
-    path = str(i) + ';-96.7970,32.7767;-104.9903,39.7392'
+    # Dallas -96.7970, 32.7767
+    # Denver -104.9903, 39.7392
+    # Salt Lake -111.8910, 40.7608
+    # Seattle -122.3321, 47.6062
+    # Dallas to Denver:
+    # path = str(i) + ';-96.7970,32.7767;-104.9903,39.7392'
+    # Salt Lake to Seattle
+    path = str(i) + ';-111.8910, 40.7608;-122.3321, 47.6062'
     payload = {
         'dataSource': 'airsigmets',
         'requestType': 'retrieve',
@@ -84,7 +91,7 @@ if __name__ == "__main__":
     # push?
     #turn_on_logging()  # comment out when not needed
     sig_dict = {}
-    with open('Output.txt', 'w') as f:
+    with open('Salt Lake to Seattle.txt', 'w') as f:
         f.write('Path Width, Number of AIRSIGMETS\n')
         for i in range(1, 211, 10):
             request_payload = build_payload(i)

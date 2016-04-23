@@ -1,0 +1,200 @@
+Path Width, Number of AIRSIGMETS
+    1            108
+    11            111
+    21            116
+    31            117
+    41            120
+    51            126
+    61            130
+    71            134
+    81            135
+    91            142
+    101            146
+    111            148
+    121            154
+    131            161
+    141            162
+    151            164
+    161            167
+    171            168
+    181            172
+    191            176
+    201            178
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="MTN OBSCN"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard type="IFR"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="MOD-SEV" type="TURB"></hazard>
+<hazard severity="MOD-SEV" type="TURB"></hazard>
+<hazard severity="MOD-SEV" type="TURB"></hazard>
+<hazard severity="MOD-SEV" type="TURB"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
+<hazard severity="MOD" type="ICE"></hazard>
