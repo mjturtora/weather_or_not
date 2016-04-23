@@ -81,6 +81,7 @@ def build_payload(i):
 #########################################################
 # noinspection PyPackageRequirements
 if __name__ == "__main__":
+    # push?
     #turn_on_logging()  # comment out when not needed
     sig_dict = {}
     with open('Output.txt', 'w') as f:
