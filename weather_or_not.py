@@ -4,6 +4,7 @@ import os
 import webbrowser
 import requests
 import logging
+import csv
 from bs4 import BeautifulSoup
 
 # http://stackoverflow.com/questions/10588644/how-can-i-see-the-entire-http-request-thats-being-sent-by-my-python-application
@@ -84,6 +85,21 @@ def build_payload(i):
         'flightPath': path
     }
     return payload
+
+# returns dictionary from csv_file that maps iata code to latitude and longitude
+def get_dictionary(csv_file):
+    with open(csv_file, 'rb') as f:
+        reader = csv.reader(f)
+        airport_list = map(tuple, reader)
+    # remove title tuple
+    airport_list.pop(0)
+    # initialize dictionary
+    # iterate through tuples in airport_list
+    airport_dict = dict()
+    for airport in airport_list:
+        # airport[0] = iata, airport[5] = lat, airport[6] = long
+        airport_dict[airport[0]] = (airport[5], airport[6])
+    return airport_dict
 
 #########################################################
 # noinspection PyPackageRequirements
