@@ -65,7 +65,7 @@ def open_response_in_browser(fname):
     webbrowser.open(fname + '.html')
 
 
-def build_payload(i):
+def build_payload(i, airport_route):
     """ Build request payload, add Airport data and time here
     :return: payload
     """
@@ -76,13 +76,13 @@ def build_payload(i):
     # Dallas to Denver:
     # path = str(i) + ';-96.7970,32.7767;-104.9903,39.7392'
     # Salt Lake to Seattle
-    path = str(i) + ';-111.8910, 40.7608;-122.3321, 47.6062'
+    path_request = str(i) + airport_route
     payload = {
         'dataSource': 'airsigmets',
         'requestType': 'retrieve',
         'format': 'xml',
         #'flightPath': '57.5;-96.7970,32.7767;-104.9903,39.7392'
-        'flightPath': path
+        'flightPath': path_request
     }
     return payload
 
@@ -101,22 +101,56 @@ def get_dictionary(csv_file):
         airport_dict[airport[0]] = (airport[5], airport[6])
     return airport_dict
 
+def lookup_airport(airport_dict, iata):
+    lat_long = airport_dict[iata]
+    return lat_long
+
+
+def build_path(airport_dict, itinerary):
+    """
+    Build coordinate path string from ordered list of iata codes.
+    :param itineray: list of iata codes
+    :return: string of semi-color separated lon,lat pairs
+    """
+    lonlat_string = ''
+    for airport in itinerary:
+        lat_long = lookup_airport(airport_dict, airport)
+        # starts with semi-colon
+        lon_lat = ';' + str(lat_long[1]) + ',' + str(lat_long[0])
+        lonlat_string += lon_lat
+        print 'lonlat_string = ', lonlat_string
+    return lonlat_string
+
+
+
 #########################################################
 # noinspection PyPackageRequirements
 if __name__ == "__main__":
     # push?
-    #turn_on_logging()  # comment out when not needed
+    #turn_on_logging()  # comment out when not
+
+    csv_file = 'airports.csv'
+    airport_dict = get_dictionary(csv_file)
+    # check "0E0" and "0E8"
+    itinerary = ['0E0', '0E8']
+    #itinerary = ['SLC', 'SEA']  # Salt Lake Intl to Seattle-Tacoma
+    #itinerary = ['TPA', 'TPF']  # Tampa Intl to Peter O. Knight
+    path = build_path(airport_dict, itinerary)
+    print 'path = ', path
+
     sig_dict = {}
-    with open('Salt Lake to Seattle.txt', 'w') as f:
+    with open('Moriarty to Crownpoint.txt', 'w') as f:
         f.write('Path Width, Number of AIRSIGMETS\n')
-        for i in range(1, 211, 10):
-            request_payload = build_payload(i)
+        for i in range(1, 10, 10):
+            request_payload = build_payload(i, path)
             # open a session and get response for default page
             session = requests.Session()
             url = 'https://www.aviationweather.gov/adds/dataserver_current/httpparam'
             response0 = session.get(url, params=request_payload)
             write_response(response0, 'Response')
-            #open_response_in_browser('Response')
+
+            open_response_in_browser('Response')
+
             bs_search_result = BeautifulSoup(read_response_content('Response.html'), 'lxml')
             #airsigmet = bs_search_result.find_all('airsigmet')
             output_string = '    ' + str(i) + '            ' +\

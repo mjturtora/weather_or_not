@@ -1,0 +1,13 @@
+Path Width, Number of AIRSIGMETS
+    1            11
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="MOD" type="TURB"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
+<hazard severity="NONE" type="CONVECTIVE"></hazard>
