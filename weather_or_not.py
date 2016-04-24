@@ -6,6 +6,7 @@ import requests
 import logging
 import csv
 from bs4 import BeautifulSoup
+from collections import OrderedDict
 
 # http://stackoverflow.com/questions/10588644/how-can-i-see-the-entire-http-request-thats-being-sent-by-my-python-application
 # These two lines enable debugging at httplib level (requests->urllib3->http.client)
@@ -121,7 +122,38 @@ def build_path(airport_dict, itinerary):
         print 'lonlat_string = ', lonlat_string
     return lonlat_string
 
+def get_severity(severity, segment):
+    return 'severity="' + severity + '"' in str(segment)
 
+# TODO: improve runtime performance 
+def get_severities_count(bs_search_result):
+    severities_count = OrderedDict()
+
+    none = 0
+    lt_mod = 0
+    mod = 0
+    mod_sev = 0
+    sev = 0
+
+    for i in bs_search_result.find_all('hazard'):
+        if 'severity="' + 'NONE' + '"' in str(i):
+            none += 1
+        elif 'severity="' + 'LT-MOD' + '"' in str(i):
+            lt_mod += 1
+        elif 'severity="' + 'MOD' + '"' in str(i):
+            mod += 1
+        elif 'severity="' + 'MOD-SEV' + '"' in str(i):
+            mod_sev += 1
+        elif 'severity="' + 'SEV' + '"' in str(i):
+            sev += 1
+
+    severities_count['NONE'] = none
+    severities_count['LT-MOD'] = lt_mod
+    severities_count['MOD'] = mod
+    severities_count['MOD-SEV'] = mod_sev
+    severities_count['SEV'] = sev
+
+    return severities_count
 
 #########################################################
 # noinspection PyPackageRequirements
@@ -139,17 +171,17 @@ if __name__ == "__main__":
     print 'path = ', path
 
     sig_dict = {}
-    with open('Moriarty to Crownpoint.txt', 'w') as f:
+    with open('Output.txt', 'w') as f:
         f.write('Path Width, Number of AIRSIGMETS\n')
         for i in range(1, 10, 10):
-            request_payload = build_payload(i, path)
+            """request_payload = build_payload(i, path)
             # open a session and get response for default page
             session = requests.Session()
             url = 'https://www.aviationweather.gov/adds/dataserver_current/httpparam'
             response0 = session.get(url, params=request_payload)
             write_response(response0, 'Response')
 
-            open_response_in_browser('Response')
+            open_response_in_browser('Response')"""
 
             bs_search_result = BeautifulSoup(read_response_content('Response.html'), 'lxml')
             #airsigmet = bs_search_result.find_all('airsigmet')
@@ -157,5 +189,7 @@ if __name__ == "__main__":
                             str(len(bs_search_result.find_all('airsigmet'))) +\
                             '\n'
             f.write(output_string)
-        for l in bs_search_result.find_all('hazard'):
-            f.write(str(l) + '\n')  # works!
+            print get_severities_count(bs_search_result)
+        # for l in bs_search_result.find_all('hazard'):
+        #     # f.write(str(l) + '\n')  # works!
+        #     print get_severity('NONE', l)
