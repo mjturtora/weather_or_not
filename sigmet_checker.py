@@ -119,7 +119,6 @@ def build_path(airport_dict, itinerary):
         # starts with semi-colon
         lon_lat = ';' + str(lat_long[1]) + ',' + str(lat_long[0])
         lonlat_string += lon_lat
-        print 'lonlat_string = ', lonlat_string
     return lonlat_string
 
 def get_severity(severity, segment):
@@ -168,7 +167,6 @@ if __name__ == "__main__":
     #itinerary = ['SLC', 'SEA']  # Salt Lake Intl to Seattle-Tacoma
     #itinerary = ['TPA', 'TPF']  # Tampa Intl to Peter O. Knight
     path = build_path(airport_dict, itinerary)
-    print 'path = ', path
 
     sig_dict = {}
     with open('Output.txt', 'w') as f:
