@@ -14,5 +14,13 @@ SECRET_KEY = 'not key secret'
 app = Flask(__name__)
 app.config.from_object(__name__)
 
+'''
+@app.before_request
+def before_request():
+
+@app.teardown_request
+def teardown_request(exception):
+'''
+
 if __name__ == '__main__':
     app.run()
